@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二</title>
+    <style>
+        .parent-fix {
+            overflow: hidden;
+        }
+        .parent {
+            width: 100%; /* 这个宽度shjii是固定的 */
+            display: table;
+            table-layout: fixed;
+
+        }
+        .column {
+            display: table-cell;
+            height: 300px;
+
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+        .column:first-child {
+            padding-left: 0;
+        }
+
+        .col1 .inner {
+            background: red;
+            height: 300px;
+        }
+        .col2 .inner {
+            background: green;
+            height: 300px;
+        }
+        .col3 .inner {
+            background: blue;
+            height: 300px;
+        }
+        .col4 .inner {
+            background: yellow;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-fix">
+    <div class="parent">
+        <div class="column col1"><div class="inner"></div></div>
+        <div class="column col2"><div class="inner"></div></div>
+        <div class="column col3"><div class="inner"></div></div>
+        <div class="column col4"><div class="inner"></div></div>
+    </div>
+    </div>
+</body>
+</html>

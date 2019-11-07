@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+            /*
+            text-align属性：是为文本内容设置对齐方式
+            * left：左
+            * right：右
+            * center：居中
+            */
+            text-align: center;
+        }
+        #child {
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+            /*
+            display属性： 
+            * block: 块级元素 
+            * inline： 内联元素 （width, height 没有内容失效）
+            * inline-block: 行内块级元素
+            */
+            display: inline-block;
+
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">水平居中</div>
+    </div>
+
+    <script>
+        /**
+         * 第一种解决方案优点和缺点 
+           优点： 浏览器兼容性好  css2
+           缺点： text-algin 属性具有继承性，会导致子级元素中的文本内容也会水平居中 （解决方案，给子元素重新设置 text-algin）
+         */
+    </script>
+</body>
+</html>

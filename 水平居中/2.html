@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+            
+        }
+        #child {
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+            
+            display: table; /* table 或者 block 都行 */
+            /*
+            *margin属性： 外边距
+            * 一个值 ——— 上右下左
+            * 两个值 ——— 第一个表示上下， 第二个值表示左右
+            * 三个值 ——— 第一个表示上， 第二个表示左右， 第三个表示下
+            * 四个值 ——— 上右下左
+            */
+            margin: 0 auto;
+            /* position: absolute;  验证 */
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">水平居中</div>
+    </div>
+    <script>
+        /*
+        * 第二种解决方案优点和缺点
+         优点： 只需要对自己子级元素进行设置就可以实现，比较简单
+         缺点： 如果子级元素脱离文档流，就会导致margin属性值失效
+         (脱离文档流： 浮动float  绝对定位 absolute  固定定位 fixed)
+        */
+    </script>
+</body>
+</html>

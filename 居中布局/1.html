@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一</title>
+    <style>
+        #parent {
+            width: 600px;
+            height: 600px;
+            background: #ccc;
+
+            display: table-cell; /* <td> */
+            vertical-align: middle;
+        }
+        #child {
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+
+            /* display: block; */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">居中</div>
+    </div>
+    <script>
+        /*
+            优点：兼容性好
+            缺点：样式改动较多，需要注意 优化
+        */
+    </script>
+</body>
+</html>

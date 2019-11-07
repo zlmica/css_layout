@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+            
+            position: relative;  /*relative absolute fixed 都是开启了定位， 只有默认值static 没有开启*/
+        }
+        #child {
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+           
+            /*
+              把当前元素设置成绝对定位后：
+                1. 如果父级元素没有开启定位的话，当前元素是相对页面定位
+                2. 如果父级元素开启定位的话，当前元素是相对父级元素定位
+            */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">水平居中</div>
+    </div>
+    <script>
+        /*
+            第三种解决方案优点和缺点
+            优点： 无论父级元素是否脱离文档流，不影响子级元素水平居中的效果
+            缺点： transform 属性是 css3 中新增属性，浏览器支持情况不太好
+        */
+    </script>
+</body>
+</html>

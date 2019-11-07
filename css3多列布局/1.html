@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        .parent, .parent2 {
+            column-count: 4;
+            column-width: 300px;
+            column-gap: 30px;
+            column-rule-color: tomato;
+            column-rule-width: 10px;
+            column-rule-style: dotted;
+
+            /* columns: 4 300px; */
+        }
+        .col1,
+        .col2,
+        .col3,
+        .col4,
+        .col5 {
+            height: 300px;
+        }
+
+        .col1 {
+            background: red;
+        }
+        .col2 {
+            background: yellow;
+        }
+        .col3 {
+            background: blue;
+        }
+        .col4 {
+            background: green;
+        }
+        .col5 {
+            background: black;
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <div class="col4"></div>
+    </div>
+    <div class="parent2">
+    <div class="col5"></div>
+</div>
+
+    <script>
+        /*
+            column-count 属性用于设置列的数量或者允许的最大列数
+             auto 默认值 （由css属性自行分配）   number 必须为正整数 （用于自定义列数）
+            column-width 属性用于设置列的宽度或者列的最小宽度
+             auto 默认值      length  必须为正整数
+            column-gap   属性用于设置列与列之间的间隙
+             normal 默认间距 1em   length 必须是正整数，用于表示定义列之间的间距
+            column-rule  属性用于设置间隙中的边框，包括宽度 颜色 样式
+            column-span  属性用于定义一个列元素是否跨列
+             none 不跨列    all 表示横跨所有列
+            column-fill  属性用于定义列的高度是由内容决定，还是统一高度 （等高布局）
+            auto  默认值  由列的内容决定  balance  以内容最多的一列高度为准
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二</title>
+    <style>
+        .left,
+        .right {
+            height: 300px;
+        }
+        .left {
+            width: 300px;
+            background: #c9394a;
+
+            float: left;
+        }
+        .right {
+            background: #ccc;
+
+            /* 开启BFC模式 —— 当前元素的内部环境与外界完全隔离 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">左：定宽</div>
+    <div class="right">右：自适应</div>
+    
+    <script>
+        /*
+          第二种解决方案的优点和缺点
+           优点：简单易用
+           缺点：overflow 属性不仅解决了两列布局问题，同时设置了内容溢出的情况
+        */
+    </script>
+</body>
+</html>

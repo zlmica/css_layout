@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一</title>
+    <style>
+        .left,
+        .right {
+            height: 300px;
+        }
+        .left {
+            width: 300px;
+            background: #c9394a;
+
+            float: left;
+        }
+        .right {
+            background: #ccc;
+
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">左：定宽</div>
+    <div class="right">右：自适应</div>
+
+    <script>
+        /*
+          第一种解决方案的优点和缺点
+          优点：实现方式简单
+          缺点：自适应元素 margin属性值与定宽元素的 width值保持一致
+                定宽元素浮动与自适应元素不浮动导致浏览器兼容性不好（比如： 右变元素的子级元素 如果用了clear: both 会出问题）
+        */
+    </script>
+</body>
+</html>
